@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbU-YP-TQq">
-                                <rect key="frame" x="87" y="545" width="200" height="50"/>
+                                <rect key="frame" x="87" y="555" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bSW-k7-rOK"/>
@@ -50,21 +50,34 @@
                                     <action selector="chooseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgv-qU-NaN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtg-YR-YkK">
+                                <rect key="frame" x="16" y="475" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Brn-EG-HVm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BTi-sP-bv5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GMB-gG-PqQ"/>
-                            <constraint firstItem="pbU-YP-TQq" firstAttribute="top" secondItem="SFS-vU-3Yc" secondAttribute="bottom" constant="100" id="Qre-BQ-j7u"/>
+                            <constraint firstItem="pbU-YP-TQq" firstAttribute="top" secondItem="Wtg-YR-YkK" secondAttribute="bottom" constant="40" id="Tdc-pn-0AO"/>
                             <constraint firstItem="BTi-sP-bv5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="V7B-cL-faR"/>
                             <constraint firstItem="BTi-sP-bv5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Yeg-1O-Zi8"/>
+                            <constraint firstItem="Wtg-YR-YkK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="c0u-0T-yhx"/>
                             <constraint firstItem="pbU-YP-TQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jLJ-r7-s4R"/>
+                            <constraint firstItem="Wtg-YR-YkK" firstAttribute="top" secondItem="SFS-vU-3Yc" secondAttribute="bottom" constant="30" id="lZU-LF-lR2"/>
                             <constraint firstItem="SFS-vU-3Yc" firstAttribute="top" secondItem="BTi-sP-bv5" secondAttribute="bottom" constant="25" id="puQ-L3-Hbn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wtg-YR-YkK" secondAttribute="trailing" id="rM7-HC-EgS"/>
                             <constraint firstItem="SFS-vU-3Yc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sny-Ib-M5R"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="choiceImage" destination="SFS-vU-3Yc" id="9vA-rz-OvY"/>
                         <outlet property="chooseButton" destination="pbU-YP-TQq" id="B5N-Pt-mO5"/>
+                        <outlet property="teamNameLabel" destination="Wtg-YR-YkK" id="DTh-ib-uro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

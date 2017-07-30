@@ -12,7 +12,7 @@ class SelectionScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        print("Started")
     }
 
     @IBAction func yankeesBtnTapped(_ sender: Any) {
