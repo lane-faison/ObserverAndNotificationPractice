@@ -12,10 +12,19 @@ class SelectionScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     
     }
 
+    @IBAction func yankeesBtnTapped(_ sender: Any) {
+        
+        let name = Notification.Name(rawValue: yankeesNotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
+        dismiss(animated: true, completion: nil)
+    }
 
+    @IBAction func redsoxBtnTapped(_ sender: Any) {
+        let name = Notification.Name(rawValue: redsoxNotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
+        dismiss(animated: true, completion: nil)
+    }
 }
